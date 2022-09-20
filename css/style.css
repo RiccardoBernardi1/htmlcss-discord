@@ -83,6 +83,7 @@
 }
 .container-small {
     max-width: 900px;
+    text-align: center;
 }
 .row {
     display: flex;
@@ -96,6 +97,10 @@ body{
 h1,h2,h3,h4,h5{
     font-weight: bold;
 }
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
 
 /* BUTTONS */
 
@@ -103,7 +108,15 @@ h1,h2,h3,h4,h5{
     padding: 10px 15px;
     border-radius: 40px;
     background-color: white;
-    border-color: white;
+    border-color:transparent;
+}
+.btn.black{
+    background-color: black;
+    color: white;
+}
+.btn.big{
+    font-size: 20px;
+    padding: 15px 15px;
 }
 /* HEADER */
 
@@ -121,8 +134,10 @@ h1,h2,h3,h4,h5{
     color: #000;
 }
 .hero {
-    padding: 50px 0;
+    padding: 150px 0;
     color: white;
+    background-image:url(../img/jumbo.png);
+    background-size: cover;
 }
 .main-nav {
     width: 60%;
@@ -143,7 +158,14 @@ h1,h2,h3,h4,h5{
     width: 130px;
     height: 30px;
 }
-
+h1{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+.hero .btn{
+    margin: 15px 20px;
+}
 /* MAIN */
 
 section {
