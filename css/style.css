@@ -46,7 +46,6 @@
 .debug footer {
     background-color: #23272a;
 }
-
 .debug .footer-top {
     border-bottom: 2px solid #fff;
 }
@@ -104,7 +103,19 @@ p{
 h1,h2,h3{
     font-size: 45px;
 }
-h3{font-size: 30px;}
+h3{
+    font-size: 30px;
+}
+h4,h5{ 
+    color: #7289d9;
+    padding-bottom: 20px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 20px;
+}
 /* BUTTONS */
 
 .btn{
@@ -158,7 +169,7 @@ h3{font-size: 30px;}
 .main-nav ul li {
     margin: 0 10px;
 }
-.main-nav ul li a {
+li a {
     text-decoration: none;
     color: inherit;
 }
@@ -208,8 +219,12 @@ h3{
     
 /* FOOTER */
 
+footer{
+    background-color:#23272A;
+    color: white;
+}
 .footer-top {
-    padding: 10px 0 30px 0;
+    padding: 90px 0 40px 0;
 }
 .footer-top .col-small {
     width: 25%;
@@ -220,11 +235,27 @@ h3{
 .footer-top .col-big .col {
     width: 25%;
 }
-
 .footer-bottom {
     padding-top: 30px;
 } 
 .footer-bottom .row {
     justify-content: space-between;
     align-items: center;
+}
+.footer-top img,span{
+    vertical-align: middle;
+}
+.footer-top img{
+    height: 20px;
+}
+.social{
+    font-size:25px;
+    padding-top: 20px;
+}
+.col ul{
+    list-style: none;
+    margin-left: -40px;
+}
+.col ul li{
+    padding: 10px 0 10px 0;
 }
