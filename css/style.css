@@ -236,11 +236,11 @@ footer{
     width: 25%;
 }
 .footer-bottom {
-    padding-top: 30px;
+    padding: 15px 0px 30px 0;
 } 
 .footer-bottom .row {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .footer-top img,span{
     vertical-align: middle;
@@ -258,4 +258,7 @@ footer{
 }
 .col ul li{
     padding: 10px 0 10px 0;
+}
+.container.row img,button{
+    vertical-align: middle;
 }
