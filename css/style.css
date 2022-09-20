@@ -7,6 +7,7 @@
 
 /* DEBUG */
 
+/* debug header top */
 .debug header {
     background-color: #add8e6;
 }
@@ -17,6 +18,19 @@
     border: 2px dashed;
     padding: 10px 5px;
 }
+
+/* debug hero */
+.debug .hero {
+    background-color: #00008b;
+    height: 500px;
+}
+.debug .hero .container-small {
+    background-color: #ee82ee;
+    height: 100%;
+    border: 2px dashed;
+}
+
+/* debug main */
 .debug section .row {
     height: 400px;
 }
@@ -29,23 +43,18 @@
 .debug .col-small {
     background-color: #ffc0cb;
 }
-.debug .hero {
-    background-color: #00008b;
-    height: 500px;
-}
-.debug .hero .container-small {
-    background-color: #ee82ee;
-    height: 100%;
-    border: 2px dashed;
-}
 .debug section:last-child .container {
     height: 900px;
     background-color: green;
     border: 2px dashed;
 }
+
+/* debug footer */
 .debug footer {
     background-color: #23272a;
 }
+
+/* debug footer top */
 .debug .footer-top {
     border-bottom: 2px solid #fff;
 }
@@ -62,6 +71,8 @@
 .debug .footer-top .col-big .col {
     border: 2px dashed white;
 }
+
+/* debug footer bottom */
 .debug .footer-bottom .container {
     background-color: #7fffd4;
     height: 50px;
@@ -90,7 +101,16 @@ section .container{
 .row {
     display: flex;
 }
-
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+li a:hover{
+    text-decoration: underline;
+}
+ul{
+    padding-left: 0;
+}
 /* TIPOGRAPHY */
 
 body{
@@ -99,34 +119,35 @@ body{
 h1,h2,h3,h4,h5{
     font-weight: bold;
 }
-p{
-    font-size: 20px;
-    line-height: 30px;
-}
-h1,h2,h3{
+h1,h2{
     font-size: 45px;
 }
-h3{
+h3,h4{
     font-size: 30px;
 }
 h4,h5{ 
     color: #7289d9;
     padding-bottom: 20px;
 }
-h4{
-    font-size: 30px;
-}
 h5{
     font-size: 20px;
 }
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
 /* BUTTONS */
 
+/* button generico */
 .btn{
     padding: 10px 15px;
     border-radius: 40px;
     background-color: white;
     border-color:transparent;
 }
+
+/* bottoni colorati */
 .btn.black{
     background-color: black;
     color: white;
@@ -140,8 +161,23 @@ h5{
     color:white;
 }
 
+/* hover bottoni */
+.btn:hover{
+    cursor: pointer;
+    color:#7983F5;
+    box-shadow: 0px 5px 10px 0px #000000;
+}
+.btn.black:hover{
+    background-color: #36393F;
+    color:white;
+}
+.btn.purple:hover{
+    background-color: #7983F5;
+    color: white;
+}
 /* HEADER */
 
+/* header top */
 .header-top {
     padding: 16px 0;
     background-color: #255EE9;
@@ -155,14 +191,9 @@ h5{
     text-align: center;
     color: #000;
 }
-.hero {
-    padding: 150px 0;
-    color: white;
-    background-image:url(../img/jumbo.png);
-    background-size: cover;
-}
 .main-nav {
     width: 60%;
+    padding-right:60px;
 }
 .main-nav ul {
     list-style: none;
@@ -172,13 +203,17 @@ h5{
 .main-nav ul li {
     margin: 0 10px;
 }
-li a {
-    text-decoration: none;
-    color: inherit;
-}
 .logo {
     width: 130px;
     height: 30px;
+}
+
+/* hero */
+.hero {
+    padding: 150px 0;
+    color: white;
+    background-image:url(../img/jumbo.png);
+    background-size: cover;
 }
 h1{
     text-align: center;
@@ -236,6 +271,7 @@ section:nth-child(2)::after{
     
 /* FOOTER */
 
+/* footer top */
 footer{
     background-color:#23272A;
     color: white;
@@ -252,6 +288,25 @@ footer{
 .footer-top .col-big .col {
     width: 25%;
 }
+.footer-top img,span{
+    vertical-align: middle;
+}
+.footer-top img{
+    height: 20px;
+}
+.col ul{
+    list-style: none;
+}
+.col ul li{
+    padding: 10px 0 10px 0;
+}
+hr{
+    height: 2px;
+    border: none;
+    background-color: #7289DA;
+}
+
+/* footer bottom */
 .footer-bottom {
     padding: 15px 0px 30px 0;
 } 
@@ -259,23 +314,16 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
 }
-.footer-top img,span{
-    vertical-align: middle;
-}
-.footer-top img{
-    height: 20px;
-}
 .social{
     font-size:25px;
     padding-top: 20px;
 }
-.col ul{
-    list-style: none;
-    margin-left: -40px;
-}
-.col ul li{
-    padding: 10px 0 10px 0;
-}
 .container.row img,button{
     vertical-align: middle;
+}
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 100px;    
 }
