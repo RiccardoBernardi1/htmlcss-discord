@@ -111,6 +111,7 @@ li a:hover{
 ul{
     padding-left: 0;
 }
+
 /* TIPOGRAPHY */
 
 body{
@@ -175,6 +176,7 @@ p{
     background-color: #7983F5;
     color: white;
 }
+
 /* HEADER */
 
 /* header top */
@@ -214,6 +216,7 @@ p{
     color: white;
     background-image:url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
 }
 h1{
     text-align: center;
@@ -222,6 +225,7 @@ h1{
 .hero .btn{
     margin: 15px 20px;
 }
+
 /* MAIN */
 
 section:nth-child(1n) {
@@ -259,15 +263,21 @@ section:nth-child(2n)::before {
     height: 150px;
     display: block;
     background-image: url(../img/wave.svg);
-    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotatex(180deg);
 }
 section:nth-child(2)::after{
     content: '';
+    background-size: cover;
     height: 150px;
+    background-repeat: no-repeat;
     display: block;
     background-image: url(../img/wave.svg);
 }
-
+.col-big img{
+    width: 100%;
+}
     
 /* FOOTER */
 
